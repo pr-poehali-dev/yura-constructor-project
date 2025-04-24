@@ -4,7 +4,8 @@ import {
   Image, 
   Square, 
   Layout, 
-  Button as ButtonIcon 
+  // Заменяем Button на ButtonSquare
+  ButtonIcon 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
