@@ -4,8 +4,7 @@ import {
   Image, 
   Square, 
   Layout, 
-  // Используем Square-иконку для кнопки, так как ButtonIcon не существует
-  SquareButton
+  Button as ButtonIcon  // Переименовываем для избежания конфликта с компонентом Button
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -19,7 +18,7 @@ export const ElementsPanel = ({ onAddElement }: ElementsPanelProps) => {
     { name: "Изображение", icon: <Image />, type: "image" },
     { name: "Блок", icon: <Square />, type: "block" },
     { name: "Колонки", icon: <Layout />, type: "columns" },
-    { name: "Кнопка", icon: <SquareButton />, type: "button" },
+    { name: "Кнопка", icon: <ButtonIcon />, type: "button" },
   ];
 
   return (
